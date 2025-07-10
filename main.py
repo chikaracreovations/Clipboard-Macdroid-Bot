@@ -40,7 +40,7 @@ def fix_text():
     if not text:
         return jsonify({"error": "Missing 'text' field in request"}), 400
     fixed = call_openrouter(text)
-    return jsonify({"fixed": fixed})
+    return jsonify(fixed)
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
