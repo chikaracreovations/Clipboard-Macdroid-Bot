@@ -17,7 +17,7 @@ def call_openrouter(prompt):
         "messages": [
             {
                 "role": "system",
-                "content": "You are a grammar corrector. ONLY return the corrected version of the sentence, with no explanation, no formatting, and no introduction. Just output the fixed sentence only."
+                "content": "You are a grammar corrector. ONLY return the corrected version or a better structured version of the sentence, with no explanation, no formatting, and no introduction. Just output the fixed sentence only."
             },
             {
                 "role": "user",
